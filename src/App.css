@@ -33,15 +33,18 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-color: rgb(125, 140, 144);
+  height: 10%;
 }
 
 
 #txtSerch {
-  height: 5%;
-  padding: 1rem;
-  size: 5rem;
+  width: 30%;
+  height: 2.5%;
+  padding: 0.5rem;
+  /* size: 5rem; */
   border-radius: 10px;
-  border: 5px solid rgb(86, 78, 78);
+  border: 3px solid rgb(86, 78, 78);
 }
 
 @keyframes App-logo-spin {

@@ -89,8 +89,9 @@ function App() {
   return <div>
 
     <div>
-      welcome to my store
+      <h1> welcome to my store</h1>
     </div>
+    <SumPrice sum={sum} />
     <div className="filters">
       <div>
         <label htmlFor="a">vitamin A</label>
@@ -100,7 +101,7 @@ function App() {
         <label htmlFor="a">vitamin B</label>
         <input type="checkbox" value="b" id="b" onChange={(e) => filter()} />
       </div>
-      <input type="text" id="txtSerch" onChange={txtSerch} />
+      <input type="text" id="txtSerch" placeholder="type for search" onChange={txtSerch} />
       <div>
 
         <input type="range" min="1" max="200" value={lblrng} id="price-range" onChange={(e) => { setLblrng(e.target.value); filter(); }} />
@@ -112,7 +113,6 @@ function App() {
         <Card key={card.id} id={card.id} vitamins={card.vitamin} remove={remove} img={card.img} name={card.name} price={card.price} />
       )}
     </div>
-    <SumPrice sum={sum} />
   </div>
 }
 
@@ -168,3 +168,5 @@ function App() {
 // }
 
 export default App
+
+
