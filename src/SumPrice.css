@@ -1,0 +1,12 @@
+.sum-of-all-products {
+    display: block;
+    position: fixed;
+    height: 10%;
+    width: 15%;
+    top: 0;
+    right: 50px;
+    background-color: rgba(203, 98, 32, 0.2);
+    text-align: center;
+    border-radius: 3px;
+    border: 3px dashed;
+}
