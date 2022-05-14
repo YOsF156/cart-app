@@ -2,15 +2,15 @@ function Card(props) {
     return (
         <div className="card">
             <div className="cardHeader">
-                <img src={props.img} alt="" />
+                <img src={props.img} alt={props.name} />
             </div>
             <div className="cardContent">
                 <h4><b>{props.name}</b></h4>
 
-                <h6> vitamins: {props.vitamins.toString()}</h6>
 
             </div>
-            <div className="cardFooter"><p>{props.price}</p></div>
+            <h5> vitamins: {props.vitamins.toString()}</h5>
+            <div className="cardFooter"><p>{`${props.price} $`}</p></div>
             <button onClick={() => props.remove(props.id)}>remove</button>
         </div>
     )
